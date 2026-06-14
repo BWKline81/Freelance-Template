@@ -1,0 +1,79 @@
+@import "../utilities/Colors.css";
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  z-index: -2;
+}
+
+.content_wrap {
+  width: 85%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content_container {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.path {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content_title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.content_image_wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content_desc_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_desc {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 55%;
+  left: 35%;
+  rotate: -45deg;
+  background-color: var(--primary-color);
+  z-index: -1;
+}

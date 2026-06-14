@@ -1,0 +1,79 @@
+@import "../utilities/Colors.css";
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service_aos {
+  width: 34%;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+}
+
+.service {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+.service_text {
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background-color 0.15s ease;
+}
+
+.service_text:hover {
+  background-color: var(--background-color);
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.Header_container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
