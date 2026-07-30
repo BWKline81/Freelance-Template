@@ -172,4 +172,11 @@
   .text_wrap p {
     font-size: 0.75rem;
   }
+  .bg_l {
+    height: 140%;
+  }
+
+  .bg_r {
+    height: 140%;
+  }
 }

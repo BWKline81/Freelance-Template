@@ -12,17 +12,6 @@
   border-bottom-right-radius: 10px;
 }
 
-.container:hover {
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
-  height: 150%;
-  background-color: var(--primary-color);
-}
-
-.container:hover .lo_co,
-.container:hover .nav_co {
-  margin-top: 1%;
-}
-
 .lo_co {
   width: 15%;
   height: 100%;
@@ -81,24 +70,36 @@
   display: inline;
 }
 
-.nav_item:hover {
-  cursor: pointer;
-  color: var(--secondary-color);
-}
+@media (hover: hover) {
+  .nav_item:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
 
-.nav_item i {
-  font-size: 1.75rem;
-  color: var(--text-color);
-  transition: opacity 0.3s ease;
-  transition: color 0.1s ease;
-}
+  .nav_item i {
+    font-size: 1.75rem;
+    color: var(--text-color);
+    transition: opacity 0.3s ease;
+    transition: color 0.1s ease;
+  }
 
-.nav_item:hover i {
-  color: var(--secondary-color);
-}
+  .nav_item:hover i {
+    color: var(--secondary-color);
+  }
 
-.nav_item:hover p {
-  text-decoration: underline;
+  .nav_item:hover p {
+    text-decoration: underline;
+  }
+  .container:hover {
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+    height: 150%;
+    background-color: var(--primary-color);
+  }
+
+  .container:hover .lo_co,
+  .container:hover .nav_co {
+    margin-top: 1%;
+  }
 }
 
 @media screen and (max-width: 900px) {

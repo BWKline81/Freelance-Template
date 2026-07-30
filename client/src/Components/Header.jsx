@@ -44,6 +44,8 @@ export default function Header() {
     },
   ];
 
+  const isHoverSupported = window.matchMedia("(hover: hover)").matches;
+
   return (
     <header
       className={styles.container}
@@ -71,12 +73,14 @@ export default function Header() {
               <motion.button
                 className={styles.nav_item}
                 onClick={() => navigate(element.path)}
-                whileHover={{ scale: 1.1, rotate: 10 }}
+                whileHover={isHoverSupported ? { scale: 1.1, rotate: 10 } : {}}
                 whileTap={{ scale: 0.9, rotate: 0 }}
               >
                 <i
                   className={element.icon}
-                  style={{ opacity: isHovered ? "1" : "0" }}
+                  style={{
+                    opacity: isHoverSupported ? (isHovered ? "1" : "0") : "1",
+                  }}
                 ></i>
                 <p>{element.name}</p>
               </motion.button>
