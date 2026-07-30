@@ -29,7 +29,12 @@ export default function Con_Con_Sec(props) {
             props.bg == "bg_1"
               ? "var(--background-color)"
               : "var(--primary-color)",
-          top: props.bg == "bg_1" ? "-30%" : "0%",
+          top:
+            window.innerWidth < 550
+              ? props.bg == "bg_1"
+                ? "-30%"
+                : "70%"
+              : "-30%",
         }}
         data-aos={props.bg == "bg_1" ? "zoom-in" : "zoom-out"}
       ></div>

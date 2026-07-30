@@ -32,3 +32,33 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 1000px) {
+  .header_wrap {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .header_wrap p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: 1.25rem;
+  }
+
+  .header_wrap p {
+    font-size: 0.85rem;
+  }
+
+  .line {
+    height: 2px;
+  }
+}

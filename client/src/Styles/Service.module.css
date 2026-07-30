@@ -72,3 +72,46 @@
   overflow: hidden;
   transition: color 0.3s ease;
 }
+
+@media screen and (max-width: 1200px) {
+  .btn {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .btn {
+    width: 60%;
+    height: 15%;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .img_wrap {
+    width: 100%;
+    height: 40%;
+  }
+
+  .con_wrap {
+    width: 80%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .description {
+    font-size: 0.7rem;
+  }
+}

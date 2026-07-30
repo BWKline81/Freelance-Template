@@ -34,3 +34,39 @@
   color: var(--text-color);
   transition: color 0.1s ease;
 }
+
+@media screen and (max-width: 750px) {
+  .container {
+    height: 40vh;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+
+  .wrap p {
+    font-size: 1rem;
+  }
+
+  .wrap {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    height: 30vh;
+  }
+
+  .wrap {
+    width: 95%;
+  }
+
+  .link {
+    font-size: 0.85rem;
+  }
+
+  .wrap p {
+    font-size: 0.85rem;
+  }
+}

@@ -32,3 +32,9 @@
   aspect-ratio: 1 / 1;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 800px) {
+  .location_map {
+    width: 80%;
+  }
+}

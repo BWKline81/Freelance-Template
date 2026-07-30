@@ -91,8 +91,12 @@ export default function TI_Home_Sec() {
                     translateX: 10,
                     boxShadow:
                       index == 0 || index == 1
-                        ? "20px 20px 0px var(--primary-color)"
-                        : "20px 20px 0px var(--background-color)",
+                        ? window.innerWidth > 550
+                          ? "20px 20px 0px var(--primary-color)"
+                          : "10px 10px 0px var(--primary-color)"
+                        : window.innerWidth > 550
+                          ? "20px 20px 0px var(--secondary-color)"
+                          : "10px 10px 0px var(--secondary-color)",
                   }}
                 />
               </div>

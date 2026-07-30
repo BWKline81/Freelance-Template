@@ -72,3 +72,69 @@
   overflow: hidden;
   transition: color 0.3s ease;
 }
+
+@media screen and (max-width: 1100px) {
+  .btn {
+    height: 25%;
+    font-size: 1.5rem;
+    width: 50%;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .img_wrap {
+    width: 100%;
+    height: 40%;
+  }
+
+  .con_wrap {
+    width: 90%;
+    height: 60%;
+  }
+
+  .img {
+    width: 30%;
+  }
+
+  .btn {
+    height: 20%;
+    width: 70%;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .img {
+    width: 40%;
+  }
+
+  .btn {
+    height: 20%;
+    width: 80%;
+  }
+
+  .description {
+    font-size: 0.7rem;
+  }
+
+  .con_wrap {
+    height: 50%;
+  }
+}

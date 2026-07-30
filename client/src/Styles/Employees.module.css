@@ -76,3 +76,38 @@
   top: 0;
   z-index: 100;
 }
+
+@media screen and (max-width: 1100px) {
+  .emp_text {
+    height: 30%;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+  }
+
+  .employee_aos {
+    width: 60%;
+    aspect-ratio: 3 / 4;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .employee_aos {
+    width: 80%;
+    aspect-ratio: 3 / 4;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+}

@@ -128,3 +128,48 @@
     transform: rotate(0deg);
   }
 }
+
+@media screen and (max-width: 900px) {
+  .text_wrap h2 {
+    font-size: 1.5rem;
+  }
+
+  .text_wrap p {
+    font-size: 1rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .text_wrap {
+    width: 85%;
+    height: 40%;
+    border-left: none;
+    border-top: 2px solid var(--text-color);
+    padding-left: 0;
+    padding-top: 2.5%;
+  }
+
+  .img {
+    width: 50%;
+  }
+
+  .bg_l {
+    height: 125%;
+  }
+
+  .bg_r {
+    height: 125%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text_wrap h2 {
+    font-size: 1.25rem;
+  }
+
+  .text_wrap p {
+    font-size: 0.75rem;
+  }
+}

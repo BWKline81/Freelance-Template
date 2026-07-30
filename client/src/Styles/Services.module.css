@@ -77,3 +77,29 @@
   top: 0;
   z-index: 100;
 }
+
+@media screen and (max-width: 725px) {
+  .name {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .service_aos {
+    width: 45%;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  P .name {
+    font-size: 1.25rem;
+  }
+
+  .service_aos {
+    width: 60%;
+  }
+}

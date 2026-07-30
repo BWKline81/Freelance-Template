@@ -115,3 +115,23 @@
   flex-direction: column;
   height: 100%;
 }
+
+@media screen and (max-width: 800px) {
+  .socials_wrap {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content h3 {
+    font-size: 1.15rem;
+  }
+
+  .content i {
+    font-size: 2rem;
+  }
+
+  .socials_content i {
+    font-size: 2rem;
+  }
+}

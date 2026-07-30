@@ -100,3 +100,37 @@
 .nav_item:hover p {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 900px) {
+  .nav_item {
+    font-size: 1.2rem;
+  }
+
+  .nav_item i {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav_item {
+    font-size: 0.8rem;
+  }
+
+  .nav_item i {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav_co {
+    width: 85%;
+  }
+
+  .nav_item {
+    font-size: 0.7rem;
+  }
+}
